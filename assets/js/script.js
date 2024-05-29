@@ -34,12 +34,12 @@
 
 
 const textElement = document.getElementById('animationText');
-const words = ['coder', 'programmer', 'developer', 'businessman', 'traveller'];
+const words = ['Developer', 'Programmer', 'Designer', 'Businessman', 'Traveller'];
 let wordIndex = 0;
 let charIndex = words[wordIndex].length; // Start with the first word fully displayed
-const typingSpeed = 120;
-const erasingSpeed = 120; // Match the typing speed for consistency
-const delayBetweenWords = 1000;
+const typingSpeed = 150;
+const erasingSpeed = 150; // Match the typing speed for consistency
+const delayBetweenWords = 2000;
 
 // Initialize the text with the first word
 textElement.textContent = words[wordIndex];

@@ -1,5 +1,12 @@
 /* start */
 /* *********************************************************** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 /* start */
 /* *********************************************************** */
@@ -36,11 +43,13 @@ body {
     background-color: black;
     transition: box-shadow 0.5s ease;
 }
-.neon-border:hover{
+
+.neon-border:hover {
     box-shadow: 0 0 20px #00ff51,
         0 0 30px #00ff51,
         0 0 40px #00ff51;
 }
+
 .neon-border img {
     width: 100%;
     height: 100%;
@@ -127,14 +136,14 @@ body {
 /* ******************************************************************************** */
 
 .blurred-navbar {
-    background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(3px);
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
     border: 3px solid #00ff51;
 }
 
 .nav-link-text {
     font-size: 1.2rem;
-    transition: color 0.5s ease,border-bottom-color 0.5s ease;
+    transition: color 0.5s ease, border-bottom-color 0.5s ease;
     padding-bottom: 4px;
     color: white;
     border-bottom: 2px solid transparent;
@@ -152,7 +161,8 @@ body {
     border: 3px solid;
     border-color: #00ff51;
     color: #00ff51;
-    transition: color 0.5s ease,background-color 0.5s ease,box-shadow 0.5s ease;
+    transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer;
 }
 
 /* .social-icon{
@@ -161,31 +171,53 @@ body {
 .social-area:hover {
     color: black;
     background-color: #00ff51;
-    box-shadow: 
-        0 0 10px #00ff51, /* Red shadow on the top */
-        0 0 10px #00ff51, /* Green shadow on the right */
-        0 0 10px #00ff51, /* Blue shadow on the bottom */
-        0 0 10px #00ff51; /* Yellow shadow on the left */
+    box-shadow:
+        0 0 10px #00ff51,
+        /* Red shadow on the top */
+        0 0 10px #00ff51,
+        /* Green shadow on the right */
+        0 0 10px #00ff51,
+        /* Blue shadow on the bottom */
+        0 0 10px #00ff51;
+    /* Yellow shadow on the left */
 }
 
-.home-content-btn{
+.home-content-btn {
     background-color: transparent;
     border: 3px solid;
     border-color: #00ff51;
     color: #00ff51;
-    transition: color 0.5s ease,background-color 0.5s ease,box-shadow 0.5s ease;
+    transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer;
 }
-.home-content-btn:hover{
+
+.home-content-btn:hover {
     color: black;
     background-color: #00ff51;
-    box-shadow: 
-        0 0 10px #00ff51, /* Red shadow on the top */
-        0 0 10px #00ff51, /* Green shadow on the right */
-        0 0 10px #00ff51, /* Blue shadow on the bottom */
-        0 0 10px #00ff51; /* Yellow shadow on the left */
+    box-shadow:
+        0 0 10px #00ff51,
+        /* Red shadow on the top */
+        0 0 10px #00ff51,
+        /* Green shadow on the right */
+        0 0 10px #00ff51,
+        /* Blue shadow on the bottom */
+        0 0 10px #00ff51;
+    /* Yellow shadow on the left */
 }
+
 /* start */
 /* ******************************************************************************** */
+.section {
+    min-height: 100vh;
+    padding: 7rem 8rem;
+    border: 1px solid #00ff51;
+}
+
+.text-paragraph {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
 /* start */
 /* ******************************************************************************** */
 /* start */
