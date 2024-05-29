@@ -33,7 +33,7 @@
 // ************************************************
 
 
-const textElement = document.getElementById('text');
+const textElement = document.getElementById('animationText');
 const words = ['coder', 'programmer', 'developer', 'businessman', 'traveller'];
 let wordIndex = 0;
 let charIndex = words[wordIndex].length; // Start with the first word fully displayed
