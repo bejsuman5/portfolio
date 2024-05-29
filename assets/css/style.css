@@ -1,6 +1,7 @@
 body {
     /* color: white !important; */
     /* background-color: black !important; */
+    overflow: hidden;
 
 
     /* display: flex;
