@@ -1,6 +1,6 @@
 body {
-    /* color: white !important; */
-    /* background-color: black !important; */
+    color: white;
+    background-color: black;
     overflow: hidden;
 
 
@@ -19,7 +19,7 @@ body {
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid;
-    border-color: #39FF14;
+    border-color: #00ff51;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 20px #00ff99,
         0 0 30px #00ff99,
@@ -106,6 +106,24 @@ body {
   
 /* start */
 /* ******************************************************************************** */
+
+.blurred-navbar {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3px);
+    border: 3px solid #00ff51;
+}
+.nav-link-text{
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+    padding-bottom: 4px;
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+.nav-link-text:hover{
+    /* color: #39FF14; */
+    color: #00ff51;
+    border-bottom-color: #00ff51;
+}
 /* start */
 /* ******************************************************************************** */
 /* start */

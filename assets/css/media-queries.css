@@ -35,7 +35,7 @@
 
     /* Styles for large devices */
     .custom-responsive-rounded {
-        border-radius: 25px;
+        border-radius: 50px;
     }
 
     .custom-responsive-margin {
@@ -47,7 +47,7 @@
 
     /* Styles for extra large devices */
     .custom-responsive-rounded {
-        border-radius: 25px;
+        border-radius: 50px;
     }
 
     .custom-responsive-margin {
@@ -59,7 +59,7 @@
 
     /* Styles for XXL devices */
     .custom-responsive-rounded {
-        border-radius: 25px;
+        border-radius: 50px;
     }
 
     .custom-responsive-margin {

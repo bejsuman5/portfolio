@@ -32,7 +32,7 @@
             transition: opacity 1s ease-in-out, visibility 1s;
             opacity: 1;
             visibility: visible;
-            
+
         }
 
         .x {
@@ -41,7 +41,6 @@
             align-items: center;
             text-align: center;
         }
-
 
         /* .box {
             width: 75%;
@@ -161,7 +160,6 @@
         </div>        
     </div> -->
     <div class="" id="loading-screen">
-
         <section class="x">
             <div class="loader-ring"></div>
             <span class="loader-text1">Loading...</span>
@@ -178,40 +176,63 @@
 
     <section class="" id="main-content">
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg sticky-top custom-responsive-margin custom-responsive-rounded"
-            style="background-color: lavender;">
-            <div class="container-fluid px-4">
+        <nav class="navbar navbar-expand-lg sticky-top d-block" style="background: transparent;">
+            <nav class="navbar navbar-expand-lg custom-responsive-margin custom-responsive-rounded blurred-navbar">
+                <div class="container-fluid px-4">
 
-                <a class="navbar-brand" href="#">
-                    <!-- <img src="assets/images/logos/icon.png" alt="Logo" width="30" height="24"
+                    <a class="navbar-brand text-white mx-1" href="#">
+                        <!-- <img src="assets/images/logos/icon.png" alt="Logo" width="30" height="24"
                         class="d-inline-block align-text-top me-1"> -->
-                    <i class="bi bi-person-circle"></i>
-                    Portfolio
-                </a>
+                        <i class="bi bi-person-circle"></i>
+                        Portfolio
+                    </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav px-0 mb-2 mb-lg-0 container-fluid justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link text-body" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-body" href="#">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-body" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-body" href="#">Contact</a>
-                        </li>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav px-0 mb-2 mb-lg-0 container-fluid justify-content-end">
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" aria-current="page" href="#">
+                                    <span class="nav-link-text">
+                                        Home
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" href="#">
+                                    <span class="nav-link-text">
+                                        About Me
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" href="#">
+                                    <span class="nav-link-text">
+                                        Service
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" href="#">
+                                    <span class="nav-link-text">
+                                        Projects
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" href="#">
+                                    <span class="nav-link-text">
+                                        Contact Me
+                                    </span>
+                                </a>
+                            </li>
 
-                        <!-- <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle text-body" href="#" role="button" data-bs-toggle="dropdown"
+                            <!-- <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle nav-link-text" href="#" role="button" data-bs-toggle="dropdown"
                          aria-expanded="false">
                          Dropdown link
                      </a>
@@ -221,13 +242,14 @@
                          <li><a class="dropdown-item" href="#">Something else here</a></li>
                      </ul>
                  </li> -->
-                    </ul>
-                    <!-- <form class="d-flex" role="search">
+                        </ul>
+                        <!-- <form class="d-flex" role="search">
                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                  <button class="btn btn-outline-success" type="submit">Search</button>
              </form> -->
+                    </div>
                 </div>
-            </div>
+            </nav>
         </nav>
 
 
@@ -236,7 +258,7 @@
 
         <div class="" style="border-top: 3px dotted gray;margin: 4rem 0;"></div>
 
-        <div class="text-container">
+        <div class="text-container text-white">
             I'm a <span class="animation-text" id="text"></span><span class="cursor">|</span>
         </div>
 
@@ -246,7 +268,7 @@
         <!--  -->
         <section class="my-5 py-5 mx-3 mx-md-5 px-3 px-md-5 bg-body border border-primary rounded-4">
             <h1 class="text-center mb-5">
-                <span class="" style="border-bottom: 8px double black; padding-bottom: 8px">
+                <span class="text-white" style="border-bottom: 8px double black; padding-bottom: 8px">
                     form
                 </span>
             </h1>
@@ -318,8 +340,7 @@
                  </div>
              </div> -->
                     <div class="neon-border">
-                        <img src="https://bejsuman5.github.io/celebration/assets/images/logos/icon.png"
-                            alt="Profile Image">
+                        <img src="assets/images/logos/icon.png" alt="Profile Image">
                     </div>
                 </div>
             </div>
@@ -383,7 +404,7 @@
                         // Allow scrolling after loading
                         document.body.style.overflow = 'auto';
 
-                    }, 500); // Add a slight delay before showing the content
+                    }, 1000); // Add a slight delay before showing the content
                 }
             }
 
