@@ -14,7 +14,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media-queries.css">
     <style>
-        #loading-screen {
+        .center-of-the-display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .loader-ring-body {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -35,13 +42,6 @@
 
         }
 
-        .x {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
         /* .box {
             width: 75%;
             height: auto;
@@ -51,15 +51,15 @@
         } */
 
 
-        .loader-ring {
+        .loader-ring-main {
             position: absolute;
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            animation: ring 2s linear infinite;
+            animation: loaderRingAnimation 2s linear infinite;
         }
 
-        .loader-ring::before {
+        .loader-ring-main::before {
             position: absolute;
             content: '';
             left: 0;
@@ -70,16 +70,16 @@
             box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
         }
 
-        .loader-text1 {
+        .loader-ring-text {
             color: #737373;
             font-size: 20px;
             text-transform: uppercase;
             letter-spacing: 1px;
             line-height: 200px;
-            animation: text 2s ease-in-out infinite;
+            animation: loaderRingText 2s ease-in-out infinite;
         }
 
-        @keyframes ring {
+        @keyframes loaderRingAnimation {
             0% {
                 transform: rotate(0deg);
                 box-shadow: 1px 5px 2px #e65c00;
@@ -96,7 +96,7 @@
             }
         }
 
-        @keyframes text {
+        @keyframes loaderRingText {
             0% {
                 color: transparent;
             }
@@ -110,11 +110,12 @@
             }
         }
 
-        #loader {
+        #loaderProgressBarBody {
             position: relative;
             width: 300px;
             height: 50px;
-            background-color: #ddd;
+            background-color: #ffffff;
+            border: 5px solid #00ff51;
             border-radius: 25px;
             overflow: hidden;
             transition: opacity 1s ease-in-out, visibility 1s;
@@ -122,14 +123,14 @@
             visibility: visible;
         }
 
-        #loader-progress {
+        #loaderProgressBarMain {
             height: 100%;
             width: 0;
-            background-color: #4caf50;
+            background-color: #00ff51;
             transition: width 0.1s;
         }
 
-        #loader-text {
+        #loaderProgressBarText {
             position: absolute;
             width: 100%;
             text-align: center;
@@ -137,7 +138,7 @@
             left: 0;
             transform: translateY(-50%);
             font-size: 18px;
-            color: #fff;
+            color: black;
         }
 
         #main-content {
@@ -150,7 +151,7 @@
 
 <body>
     <!-- Loading... -->
-    <!-- <div class="" id="loading-screen">
+    <!-- <div class="" id="loaderRingBody">
         <div class="box p-5">
             <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
                 aria-valuemin="0" aria-valuemax="100" style="height: 2.5vh;">
@@ -159,17 +160,17 @@
             <h3 class="text-center m-0 mt-3">Loading...</h3>
         </div>        
     </div> -->
-    <div class="" id="loading-screen">
-        <section class="x">
-            <div class="loader-ring"></div>
-            <span class="loader-text1">Loading...</span>
+    <div class="loader-ring-body" id="loaderRingBody">
+        <section class="center-of-the-display">
+            <div class="loader-ring-main"></div>
+            <span class="loader-ring-text">Loading...</span>
         </section>
 
 
-        <section class="x my-5">
-            <div id="loader">
-                <div id="loader-progress"></div>
-                <div id="loader-text">0%</div>
+        <section class="center-of-the-display my-5">
+            <div id="loaderProgressBarBody">
+                <div id="loaderProgressBarMain"></div>
+                <div id="loaderProgressBarText">0%</div>
             </div>
         </section>
     </div>
@@ -308,7 +309,7 @@
                     </div>
                 </div>
 
-                <div class="col order-first order-lg-last x">
+                <div class="col order-first order-lg-last center-of-the-display">
                     <div class="neon-border">
                         <img src="assets/images/logos/icon.png" alt="Profile Image">
                     </div>
@@ -583,11 +584,11 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
 
-            const loader = document.getElementById('loader');
-            const loaderProgress = document.getElementById('loader-progress');
-            const loaderText = document.getElementById('loader-text');
+            const loaderProgressBarBody = document.getElementById('loaderProgressBarBody');
+            const loaderProgressBarMain = document.getElementById('loaderProgressBarMain');
+            const loaderProgressBarText = document.getElementById('loaderProgressBarText');
             // const content = document.getElementById('main-content');
-            const loadingScreen = document.getElementById('loading-screen');
+            const loadingScreen = document.getElementById('loaderRingBody');
             const mainContent = document.getElementById('main-content');
 
 
@@ -595,19 +596,13 @@
 
             function updateLoader() {
                 progress += 1;
-                loaderProgress.style.width = progress + '%';
-                loaderText.innerText = progress + '%';
+                loaderProgressBarMain.style.width = progress + '%';
+                loaderProgressBarText.innerText = progress + '%';
 
                 if (progress < 100) {
                     requestAnimationFrame(updateLoader);
                 } else {
                     setTimeout(() => {
-                        // loader.style.display = 'none';
-                        // content.style.display = 'block';
-
-                        // hide loader
-                        // loader.style.opacity = '0';
-                        // loader.style.visibility = 'hidden';
 
                         // hide loader sereen
                         loadingScreen.style.opacity = '0';
@@ -630,7 +625,7 @@
 
 
             // // Hide the loading screen
-            // const loadingScreen = document.getElementById('loading-screen');
+            // const loadingScreen = document.getElementById('loaderRingBody');
             // loadingScreen.style.opacity = '0';
             // loadingScreen.style.visibility = 'hidden';
 
