@@ -65,3 +65,23 @@ function erase() {
     }
 }
 
+// Function to scroll to a specific element with a gap at the top
+function scrollToElement(elementId, gap) {
+    const element = document.getElementById(elementId);
+    if (element) {
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition - gap,
+        behavior: 'smooth'
+      });
+    }
+  }
+
+  // Add event listeners to navbar links
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      scrollToElement(targetId, 65); // Adjust the gap as needed
+    });
+  });
