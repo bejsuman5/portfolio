@@ -1,11 +1,33 @@
 /* start */
 /* *********************************************************** */
+:root {
+    --primary-color: #00ff51;
+    /* --secondary-color: #2c3e50;
+    --text-color: #333;
+    --background-color: #f0f0f0;
+    --link-color: #3498db;
+    --link-hover-color: #2980b9;
+    --link-visited-color: #9b59b6; */
+}
+
+.default-color {
+    color: #00ff51;
+}
+.default-text-paragraph {
+    color: white;
+    font-size: 1.2rem;
+    text-align: justify;
+    background-color: transparent;
+}
+/* start */
+/* *********************************************************** */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
 }
 
 /* start */
@@ -152,6 +174,7 @@ body {
 .nav-link-text:hover {
     color: #00ff51;
 }
+
 /* .nav-link-text::after {
     content: '';
     position: absolute;
@@ -169,9 +192,10 @@ body {
     background-color: #00ff51;
 } */
 
-.nav-item a{
+.nav-item a {
     position: relative;
 }
+
 .nav-item a::after {
     content: '';
     position: absolute;
@@ -183,11 +207,12 @@ body {
     background: #00ff51;
     transition: width 0.4s ease-in-out;
 }
+
 .nav-item a:hover::after {
     width: 100%;
     left: 0;
     background-color: #00ff51;
-} 
+}
 
 /* start */
 /* ******************************************************************************** */
@@ -244,10 +269,7 @@ body {
     border: 1px solid #00ff51;
 } */
 
-.text-paragraph {
-    text-align: justify;
-    font-size: 1.2rem;
-}
+
 
 /* start */
 /* ******************************************************************************** */
@@ -322,7 +344,8 @@ textarea::placeholder {
     opacity: 1;
     /* Ensures the color is not faded */
 }
-.contact-submit-btn{
+
+.contact-submit-btn {
     background-color: transparent;
     border: 3px solid #00ff51;
     color: #00ff51;
@@ -331,6 +354,7 @@ textarea::placeholder {
     font-weight: 600;
     font-size: 1.5rem;
 }
+
 .contact-submit-btn:hover {
     color: black;
     background-color: #00ff51;
