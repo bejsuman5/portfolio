@@ -144,16 +144,50 @@ body {
 .nav-link-text {
     font-size: 1.2rem;
     transition: color 0.5s ease, border-bottom-color 0.5s ease;
-    padding-bottom: 5px;
     color: white;
-    border-bottom: 2px solid transparent;
+    /* position: relative; */
+    font-weight: 600;
 }
 
 .nav-link-text:hover {
-    /* color: #39FF14; */
     color: #00ff51;
-    border-bottom-color: #00ff51;
 }
+/* .nav-link-text::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #00ff51;
+    transition: width 0.4s ease-in-out;
+}
+.nav-link-text:hover::after {
+    width: 100%;
+    left: 0;
+    background-color: #00ff51;
+} */
+
+.nav-item a{
+    position: relative;
+}
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #00ff51;
+    transition: width 0.4s ease-in-out;
+}
+.nav-item a:hover::after {
+    width: 100%;
+    left: 0;
+    background-color: #00ff51;
+} 
 
 /* start */
 /* ******************************************************************************** */
@@ -184,11 +218,12 @@ body {
 
 .home-content-btn {
     background-color: transparent;
-    border: 3px solid;
-    border-color: #00ff51;
+    border: 3px solid #00ff51;
     color: #00ff51;
     transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
     cursor: pointer;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
 .home-content-btn:hover {
@@ -242,3 +277,66 @@ body {
 
 /* start */
 /* ******************************************************************************** */
+.contact-section-body {
+    border: 3px solid #00ff51;
+    background-color: transparent;
+    color: white;
+    /* transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease; */
+}
+
+.contact-card {
+    /* border: 3px solid #00ff51; */
+    background-color: transparent;
+    color: white;
+    /* transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease; */
+}
+
+.form-control-contact {
+    border: 1px solid #00ff51;
+    background: transparent;
+    color: #00ff51;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.form-control-contact:focus {
+    border: 1px solid #00ff51;
+    background: transparent;
+    color: #00ff51;
+    font-weight: 600;
+}
+
+input::placeholder {
+    color: #00ff51 !important;
+    /* Replace #ff0000 with your desired color */
+    font-weight: 600;
+    opacity: 1;
+    /* Ensures the color is not faded */
+}
+
+
+textarea::placeholder {
+    color: #00ff51 !important;
+    /* Replace #ff0000 with your desired color */
+    font-weight: 600;
+    opacity: 1;
+    /* Ensures the color is not faded */
+}
+.contact-submit-btn{
+    background-color: transparent;
+    border: 3px solid #00ff51;
+    color: #00ff51;
+    transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.contact-submit-btn:hover {
+    color: black;
+    background-color: #00ff51;
+    box-shadow:
+        0 0 10px #00ff51,
+        0 0 10px #00ff51,
+        0 0 10px #00ff51,
+        0 0 10px #00ff51;
+}
