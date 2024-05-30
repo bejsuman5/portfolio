@@ -13,12 +13,14 @@
 .default-color {
     color: #00ff51;
 }
+
 .default-text-paragraph {
     color: white;
     font-size: 1.2rem;
     text-align: justify;
     background-color: transparent;
 }
+
 /* start */
 /* *********************************************************** */
 * {
