@@ -574,14 +574,15 @@
 
     <script src="assets/js/script.js"></script>
     <script>
-        window.addEventListener('DOMContentLoaded', () => {
+        // document.addEventListener('DOMContentLoaded', () => {
+        window.addEventListener('load', function () {
 
             const loaderProgressBarBody = document.getElementById('loaderProgressBarBody');
             const loaderProgressBarMain = document.getElementById('loaderProgressBarMain');
             const loaderProgressBarText = document.getElementById('loaderProgressBarText');
             const loadingScreen = document.getElementById('loaderScreen');
             const mainContent = document.getElementById('mainContent');
-            let progress = 0;
+            let progress = 10;
 
             function updateLoader() {
                 progress += 1;
