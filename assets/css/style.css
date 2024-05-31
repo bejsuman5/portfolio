@@ -1,5 +1,15 @@
 /* start */
 /* *********************************************************** */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.courgette-regular {
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* start */
+/* *********************************************************** */
 :root {
     --primary-color: #00ff51;
     /* --secondary-color: #2c3e50;
@@ -28,11 +38,10 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: "Courgette", cursive;
 }
 
-/* start */
-/* *********************************************************** */
 body {
     color: white;
     background-color: black;
@@ -47,6 +56,68 @@ body {
     background-color: #111; */
 }
 
+/* start */
+/* ******************************************************************************** */
+
+.blurred-navbar {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border: 3px solid #00ff51;
+}
+
+.nav-link-text {
+    font-size: 1.2rem;
+    transition: color 0.5s ease, border-bottom-color 0.5s ease;
+    color: white;
+    /* position: relative; */
+    font-weight: 600;
+}
+
+.nav-link-text:hover {
+    color: #00ff51;
+}
+
+/* .nav-link-text::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #00ff51;
+    transition: width 0.4s ease-in-out;
+}
+.nav-link-text:hover::after {
+    width: 100%;
+    left: 0;
+    background-color: #00ff51;
+} */
+
+.nav-item a {
+    position: relative;
+}
+
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #00ff51;
+    transition: width 0.4s ease-in-out;
+}
+
+.nav-item a:hover::after {
+    width: 100%;
+    left: 0;
+    background-color: #00ff51;
+}
+
+/* start */
+/* *********************************************************** */
 .profile-picture {
     position: relative;
     /* width: 400px; */
@@ -123,12 +194,6 @@ body {
 
 /* start */
 /* ******************************************************************************** */
-.text-container {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 50px;
-}
 
 .cursor {
     display: inline-block;
@@ -153,66 +218,6 @@ body {
     50% {
         opacity: 0;
     }
-}
-
-/* start */
-/* ******************************************************************************** */
-
-.blurred-navbar {
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
-    border: 3px solid #00ff51;
-}
-
-.nav-link-text {
-    font-size: 1.2rem;
-    transition: color 0.5s ease, border-bottom-color 0.5s ease;
-    color: white;
-    /* position: relative; */
-    font-weight: 600;
-}
-
-.nav-link-text:hover {
-    color: #00ff51;
-}
-
-/* .nav-link-text::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: 5px;
-    right: 0;
-    background: #00ff51;
-    transition: width 0.4s ease-in-out;
-}
-.nav-link-text:hover::after {
-    width: 100%;
-    left: 0;
-    background-color: #00ff51;
-} */
-
-.nav-item a {
-    position: relative;
-}
-
-.nav-item a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: 5px;
-    right: 0;
-    background: #00ff51;
-    transition: width 0.4s ease-in-out;
-}
-
-.nav-item a:hover::after {
-    width: 100%;
-    left: 0;
-    background-color: #00ff51;
 }
 
 /* start */
@@ -264,13 +269,12 @@ body {
 
 /* start */
 /* ******************************************************************************** */
-/* .section {
-    min-height: 100vh;
-    padding: 7rem 8rem;
-    border: 1px solid #00ff51;
-} */
-
-
+.section {
+    /* min-height: 100vh; */
+    /* padding: 7rem 8rem; */
+    /* border: 1px solid #00ff51; */
+    margin-bottom: 10rem;
+}
 
 /* start */
 /* ******************************************************************************** */

@@ -49,7 +49,7 @@ document.querySelectorAll('.jump-bookmark').forEach(link => {
   link.addEventListener('click', function (e) {
     e.preventDefault();
     const targetId = this.getAttribute('href').substring(1);
-    scrollToElement(targetId, 65); // Adjust the gap as needed
+    scrollToElement(targetId, 110); // Adjust the gap as needed
   });
 });
 
