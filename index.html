@@ -574,16 +574,13 @@
 
     <script src="assets/js/script.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        window.addEventListener('DOMContentLoaded', () => {
 
             const loaderProgressBarBody = document.getElementById('loaderProgressBarBody');
             const loaderProgressBarMain = document.getElementById('loaderProgressBarMain');
             const loaderProgressBarText = document.getElementById('loaderProgressBarText');
-            // const content = document.getElementById('mainContent');
             const loadingScreen = document.getElementById('loaderScreen');
             const mainContent = document.getElementById('mainContent');
-
-
             let progress = 0;
 
             function updateLoader() {
