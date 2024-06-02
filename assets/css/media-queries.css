@@ -1,21 +1,8 @@
-.custom-responsive-rounded {
-    border-radius: 0;
-}
+/* start */
+/* ******************************************************************* */
+/* Custom font size for smaller screens */
+@media (max-width: 767px) {
 
-.custom-responsive-margin {
-    margin: 0;
-}
-
-.profile-picture {
-    width: 75%;
-    height: auto;
-}
-#loaderProgressBarBody{
-    width: 80vw;
-}
-@media (min-width: 576px) {
-
-    /* Styles for small devices */
     .custom-responsive-rounded {
         border-radius: 0px;
     }
@@ -25,15 +12,17 @@
     }
 
     .profile-picture {
-        width: 50%;
+        width: 70%;
         height: auto;
     }
-    #loaderProgressBarBody{
+
+    #loaderProgressBarBody {
         width: 80vw;
     }
 }
 
-@media (min-width: 768px) {
+/* Custom font size for medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
 
     /* Styles for medium devices */
     .custom-responsive-rounded {
@@ -48,12 +37,14 @@
         width: 50%;
         height: auto;
     }
-    #loaderProgressBarBody{
+
+    #loaderProgressBarBody {
         width: 50vw;
     }
 }
 
-@media (min-width: 992px) {
+/* Custom font size for large screens */
+@media (min-width: 992px) and (max-width: 1199px) {
 
     /* Styles for large devices */
     .custom-responsive-rounded {
@@ -68,11 +59,13 @@
         width: 75%;
         height: auto;
     }
-    #loaderProgressBarBody{
+
+    #loaderProgressBarBody {
         width: 50vw;
     }
 }
 
+/* Custom font size for extra-large screens */
 @media (min-width: 1200px) {
 
     /* Styles for extra large devices */
@@ -88,27 +81,8 @@
         width: 75%;
         height: auto;
     }
-    #loaderProgressBarBody{
-        width: 50vw;
-    }
-}
 
-@media (min-width: 1400px) {
-
-    /* Styles for XXL devices */
-    .custom-responsive-rounded {
-        border-radius: 50px;
-    }
-
-    .custom-responsive-margin {
-        margin: 1rem 6rem;
-    }
-
-    .profile-picture {
-        width: 75%;
-        height: auto;
-    }
-    #loaderProgressBarBody{
+    #loaderProgressBarBody {
         width: 50vw;
     }
 }
