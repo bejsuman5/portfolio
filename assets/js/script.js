@@ -86,3 +86,52 @@ document.querySelectorAll('.jump-bookmark').forEach(link => {
 //         setTimeout(type, typingSpeed);
 //     }
 // }
+
+
+
+// // send Contact form on whatsapp
+function sendContactFormToWhatsapp() {
+  let sendNumber = "+916290487369";
+
+  let name = document.getElementById('contact_name').value;
+  let number = document.getElementById('contact_number').value;
+  let email = document.getElementById('contact_email').value;
+  let address = document.getElementById('contact_address').value;
+  let message = document.getElementById('contact_message').value;
+
+  var form = document.getElementById("contact_form");
+
+  if (name.trim() === "") {
+    alert("Name is required!");
+    return false;
+  }
+
+  if (number.trim() === "") {
+    alert("Number is required!");
+    return false;
+  }
+
+  if (email.trim() === "") {
+    alert("Email is required!");
+    return false;
+  }
+
+  if (address.trim() === "") {
+    alert("Address is required!");
+    return false;
+  }
+
+  if (message.trim() === "") {
+    alert("Message is required!");
+    return false;
+  }
+
+  var url = "https://wa.me/" + sendNumber + "?text="
+    + "Name: " + name + "%0a"
+    + "Number: " + number + "%0a"
+    + "Email: " + email + "%0a"
+    + "Address: " + address + "%0a"
+    + "Message: " + message + "%0a%0a";
+  window.open(url, '_blank').focus();
+  form.reset();
+}
